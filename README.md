@@ -1,6 +1,6 @@
 # SpeedrunDotComAPI
 
-`SpeedrunDotComAPI` is a .NET wrapper for the speedrun.com API.
+`SpeedrunDotComAPI` is a .NET Core and Framework wrapper for the speedrun.com API.
 
 The [other C# wrapper](https://github.com/LiveSplit/SpeedrunComSharp) made by the LiveSplit team is quite old and made for .NET Framework. I also just personally think this wrapper is quite a bit cleaner and more modern in general.
 
