@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net48;netstandard2.1;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>SpeedrunComAPI</Title>
+        <Description>A full .NET wrapper over the speedrun.com API</Description>
+        <Copyright>MIT</Copyright>
+        <PackageProjectUrl>https://github.com/mirrorcult/SpeedrunComAPI</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/mirrorcult/SpeedrunComAPI</RepositoryUrl>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+      <PackageReference Include="Macross.Json.Extensions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" Condition="'$(TargetFramework)' == 'net48'"/>
+    </ItemGroup>
+</Project>
